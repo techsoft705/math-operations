@@ -27,14 +27,9 @@
     "prettier": "^2.2.1"
   },
   "types": "./index.d.ts",
-  "lint-staged": {
-    "**/*.{js,jsx}": [
-      "npm run lint:fix"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:fix"
     }
   }
 }
