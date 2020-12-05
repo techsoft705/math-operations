@@ -1,6 +1,6 @@
 // init module
 const mathoperation = require('math-operation')
 // init method
-const tambah = mathoperation.subtraction(100, 50)
+const output = mathoperation.multiplication(20, 40)
 // tampilkan output
-console.log(tambah)
+console.log(output)

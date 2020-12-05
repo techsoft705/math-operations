@@ -10,3 +10,5 @@ node_modules/
 .prettierrc
 jest.config.js
 package-lock.json
+.coveralls.yml
+.travis.yml
