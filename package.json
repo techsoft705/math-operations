@@ -1,7 +1,7 @@
 {
-  "name": "node-math-operation",
+  "name": "node-math",
   "version": "0.0.2",
-  "description": "math operation is basic operation for calculation number",
+  "description": "node-math is basic operation for calculation number",
   "main": "index.js",
   "scripts": {
     "test": "jest",

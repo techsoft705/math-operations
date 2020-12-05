@@ -1,7 +1,7 @@
 /**
  * @description MathFundamental adalah utility untuk melakukan perhitungan matematika dasar
  */
-declare namespace mathoperation {
+declare namespace nodeMath {
 
   // membuat fungsi interface untuk masing - masing method function
 
@@ -28,6 +28,16 @@ declare namespace mathoperation {
   interface MathSubtraction {
     subtraction: () => :number
   }
+
+  interface MathGreatherThan {
+    greaterThan: () => :boolean
+  }
+
+
+  interface MathLessThan {
+    lessThan: () => :boolean
+  }
+
 
   /**
    * @params { x: number, y: number }
@@ -70,6 +80,18 @@ declare namespace mathoperation {
    * @return number
    */
   function subtraction(x: number, y: number): MathSubtraction {}
+   /**
+   * @params { x: number, y: number }
+   * @description untuk komparasi angka lebih nesar
+   * @return boolean
+   */
+  function greaterThan(x: number, y: number): MathGreatherThan {}
+  /**
+   * @params { x: number, y: number }
+   * @description untuk komparasi angka lebih kecil
+   * @return boolean
+   */
+  function lessThan(x: number, y: number): MathLessThan {}
 }
 // export module type defination
-export = mathoperation
+export = nodeMath
