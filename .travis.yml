@@ -4,11 +4,12 @@ node_js:
   - node
 
 before_script:
-  - npm install
+  - npm run install
 
 script:
   - node --version
   - npm --version
+  - npm run test:coveralls
 
 cache:
   npm: true
