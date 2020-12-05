@@ -1,6 +1,6 @@
 {
-  "name": "math-operation",
-  "version": "0.0.1",
+  "name": "node-math-operation",
+  "version": "0.0.2",
   "description": "math operation is basic operation for calculation number",
   "main": "index.js",
   "scripts": {

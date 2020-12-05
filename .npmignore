@@ -5,7 +5,7 @@ coverage
 node_modules/
 .editorconfig
 .eslintignore
-.eslinttrc
+.eslintrc
 .gitignore
 .prettierrc
 jest.config.js
