@@ -28,7 +28,7 @@
   },
   "types": "./index.d.ts",
   "lint-staged": {
-    "*.js": [
+    "*.{js}": [
       "npm run lint:fix"
     ]
   },
