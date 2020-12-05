@@ -7,7 +7,9 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "lint": "eslint src/**/*.js --fix",
+    "lint:fix": "prettier src/**/*.js --check --write && npm run lint"
   },
   "author": "restuwahyu13",
   "homepage": "restuwahyu13",
@@ -33,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:fix"
     }
   }
 }
